@@ -1,0 +1,67 @@
+.container {
+    width: 1400px;
+    height: 520px;
+    padding: 40px 140px 40px 0;
+    margin-bottom: 100px;
+    @apply flex flex-row justify-between rounded-3xl pl-28;
+    background-image: linear-gradient(to right, #04150d, #000);
+    animation-name: Block;
+    animation-duration: 1s;
+}
+.textBlock {
+    width: 350px;
+    @apply h-1/2;
+    animation-name: InfoBlock;
+    animation-duration: 1.5s;
+}
+.image {
+    background-image: url(../../../images/1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @apply rounded-3xl;
+    width: 450px;
+    height: 450px;
+    animation-name: InfoBlock;
+    animation-duration: 2s;
+}
+@keyframes InfoBlock {
+    0%{ opacity: 0;}
+    70%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+@media screen and (min-width: 0px) {
+    .container {
+        @apply w-full h-full text-center p-0 flex-col items-center;
+    }
+    @keyframes Block {
+        0%{width: 0px; opacity: 0;}
+        100%{width: 100%; opacity: 1;}
+    }
+    .image {
+        margin-top: 50px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        height: 520px;
+        padding: 40px 20px 40px 0;
+        @apply flex-row items-start;
+    }
+    .image {
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1400px;
+        padding: 40px 140px 40px 140px;
+        justify-content: space-between;
+        text-align: left;
+        
+    }
+    @keyframes Block {
+        0%{width: 0px; padding: 0; opacity: 0;}
+        100%{width: 1400px; padding: 40px 140px 40px 140px; opacity: 1;}
+    }
+}

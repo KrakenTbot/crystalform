@@ -1,0 +1,4 @@
+.container {
+    @apply w-screen bg-black flex flex-col items-center;
+    font-family: 'Inter', sans-serif;
+}

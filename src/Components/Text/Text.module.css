@@ -1,0 +1,36 @@
+.container {
+    @apply h-full;
+}
+.BiggestH {
+    @apply text-white text-6xl font-semibold;
+}
+.SmallH {
+    @apply text-white text-3xl font-semibold;
+}
+.GrayH {
+    color: #DFDFDF;
+    @apply text-3xl font-semibold;
+}
+.BlackH {
+    color: #3f2a31;
+    @apply text-3xl font-semibold;
+}
+.whiteP {
+    @apply text-white text-xl font-normal mt-6;
+}
+.GrayP {
+    color: #DFDFDF;
+    @apply text-xl font-normal mt-6;
+}
+.blackP {
+    color: #3f2a31;
+    @apply text-xl font-normal mt-6;
+}
+.button {
+    margin-top: 40px;
+    /* margin-bottom: 50px; */
+}
+a {
+    padding: 12px 90px;
+    @apply text-white font-semibold text-xl bg-blue-500 rounded-3xl;
+}
